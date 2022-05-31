@@ -6,7 +6,7 @@
 /*   By: ekaik-ne <ekaik-ne@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/05 00:50:54 by ekaik-ne          #+#    #+#             */
-/*   Updated: 2022/05/19 20:05:22 by ekaik-ne         ###   ########.fr       */
+/*   Updated: 2022/05/25 01:52:06 by ekaik-ne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,5 +69,6 @@ char	*ft_strtrim(char const *s1, char const *set);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 int		ft_tolower(int c);
 int		ft_toupper(int c);
+char	*ft_unsigned_itoa(unsigned int n);
 
 #endif

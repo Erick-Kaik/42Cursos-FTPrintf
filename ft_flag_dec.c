@@ -6,7 +6,7 @@
 /*   By: ekaik-ne <ekaik-ne@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/16 18:46:37 by ekaik-ne          #+#    #+#             */
-/*   Updated: 2022/05/19 22:26:08 by ekaik-ne         ###   ########.fr       */
+/*   Updated: 2022/05/20 21:24:41 by ekaik-ne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	flag_dec(char c, va_list list)
 {
-	int value;
+	int	value;
 
 	value = 0;
 	if (c == 'd')
@@ -26,10 +26,10 @@ int	flag_dec(char c, va_list list)
 	return (value);
 }
 
-int flag_d(int number)
+int	flag_d(int number)
 {
-	int value;
-	char *temp;
+	int		value;
+	char	*temp;
 
 	temp = ft_itoa(number);
 	if (temp != NULL)
@@ -40,10 +40,10 @@ int flag_d(int number)
 	return (value);
 }
 
-int flag_i(int number)
+int	flag_i(int number)
 {
-	int value;
-	char *temp;
+	int		value;
+	char	*temp;
 
 	temp = ft_itoa(number);
 	if (temp != NULL)
@@ -51,13 +51,13 @@ int flag_i(int number)
 		value = ft_putstr(temp);
 		free(temp);
 	}
-	return (value);	
+	return (value);
 }
 
-int flag_u(unsigned int number)
+int	flag_u(unsigned int number)
 {
-	int value;
-	char *temp;
+	int		value;
+	char	*temp;
 
 	temp = ft_unsigned_itoa(number);
 	if (temp != NULL)

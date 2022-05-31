@@ -6,7 +6,7 @@
 /*   By: ekaik-ne <ekaik-ne@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/16 18:46:39 by ekaik-ne          #+#    #+#             */
-/*   Updated: 2022/05/20 20:14:24 by ekaik-ne         ###   ########.fr       */
+/*   Updated: 2022/05/22 00:52:09 by ekaik-ne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	flag_str(char c, va_list list)
 {
-	int value;
+	int	value;
 
 	value = 0;
 	if (c == 'c')
@@ -26,29 +26,29 @@ int	flag_str(char c, va_list list)
 	return (value);
 }
 
-int flag_c(int letter)
+int	flag_c(int letter)
 {
-	int value;
+	int	value;
 
 	value = ft_putchar(letter);
 	return (value);
 }
 
-int flag_s(char *str)
+int	flag_s(char *str)
 {
-	int value;
+	int	value;
 
-	if(str == NULL)
+	if (str == NULL)
 		value = ft_putstr("(null)");
 	else
 		value = ft_putstr(str);
 	return (value);
 }
 
-int flag_percentage()
+int	flag_percentage(void)
 {
-	int value;
-	
+	int	value;
+
 	value = ft_putchar('%');
 	return (value);
 }
